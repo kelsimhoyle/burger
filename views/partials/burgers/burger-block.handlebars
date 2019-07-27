@@ -1,9 +1,13 @@
-<li>
-	{{name}}
-
-	<button class="eat-burger" data-id="{{id}}" data-newdevour="{{eaten}}">
-		{{#if eaten}}Eat!!{{else}}Return!{{/if}}
+<div class="row">
+	<div class="col-md-7">
+	<p class="text-right">{{name}}</p>
+</div>
+	<div class="col-md-5">
+	<button class="eat-burger btn btn-primary" data-id="{{id}}" data-newdevour="{{eaten}}">
+		{{#if eaten}}Eat It!{{else}}Restock{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-</li>
+	<button class="delete-burger btn btn-primary" data-id="{{this.id}}">Remove</button>
+	</div>
+
+</div>

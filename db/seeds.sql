@@ -1,6 +1,4 @@
-INSERT INTO burgers (name) VALUES ('Meeses');
-INSERT INTO burgers (name) VALUES ('Bobbi');
-INSERT INTO burgers (name, sleepy) VALUES ('Sylvester', true);
-INSERT INTO burgers (name, sleepy) VALUES ('Marilyn Manson', true);
-INSERT INTO burgers (name, sleepy) VALUES ('Joe Biden', true);
-INSERT INTO burgers (name) VALUES ('Owens');
+INSERT INTO burgers (name) VALUES ('She’s A Super Leek Burger'), ("Hit Me With Your Best Shallot Burger"), ("Papaya Was a Rolling Stone Burger");
+
+INSERT INTO burgers (name, devoured) VALUES ('Foot Feta-ish Burger', true), ("Chile Relleno-You-Didn’t Burger", true), ("Open Sesame Burger ", true);
+

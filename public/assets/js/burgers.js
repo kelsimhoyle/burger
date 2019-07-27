@@ -27,15 +27,19 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newCat = {
-      name: $("#ca").val().trim(),
+    var newBurger = {
+      name: $("#burger-name").val().trim(),
       devoured: $("[name=devoured]:checked").val().trim()
     };
+
+    if (newBurger.name === "") {
+      return false;
+    }
 
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newCat
+      data: newBurger
     }).then(
       function() {
         console.log("created new burger");
@@ -59,4 +63,12 @@ $(function() {
       }
     );
   });
+
+  $("#create").on("click", function(event) {
+    event.preventDefault();
+    $('#create-burger').modal('toggle')
+
+  })
+
+
 });
