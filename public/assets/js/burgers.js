@@ -29,7 +29,6 @@ $(function() {
 
     var newBurger = {
       name: $("#burger-name").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
     };
 
     if (newBurger.name === "") {
@@ -63,12 +62,4 @@ $(function() {
       }
     );
   });
-
-  $("#create").on("click", function(event) {
-    event.preventDefault();
-    $('#create-burger').modal('toggle')
-
-  })
-
-
 });
