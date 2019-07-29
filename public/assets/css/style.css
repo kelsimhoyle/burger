@@ -5,10 +5,10 @@ body {
  .chalkboard {
   background-image: url("../imgs/Black\ Chalkboard\ Background.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   border: 15px solid red;
   box-shadow: 5px 10px 8px black;
-  height: 550px;
+  height: 75vh;
   overflow-y: scroll;
  }
 
@@ -20,12 +20,12 @@ body {
  }
 
  .chalkboard h2 {
-   font-size: 34px;
+   font-size: 1.5rem;
    margin: 2%;
  }
 
  .chalkboard p {
-   font-size: 24px;
+   font-size: 1.2rem;
  }
  
  h3 {
